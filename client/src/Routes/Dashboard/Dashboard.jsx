@@ -11,7 +11,7 @@ const navigate = useNavigate()
 const mutation = useMutation({
   mutationFn:(text)=> {
     return (
-       fetch(`http://localhost:3000/api/chats`, {
+       fetch(`${import.meta.env.VITE_API_URL}/api/chats`, {
         method:"POST", 
         credentials: "include",
         headers:{

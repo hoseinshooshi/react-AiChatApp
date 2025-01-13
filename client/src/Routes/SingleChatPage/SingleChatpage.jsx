@@ -17,7 +17,7 @@ const SingleChatpage = () => {
     const { isPending, error, data } = useQuery({
       queryKey: ['chat', chatId],
       queryFn: async () => {
-        const res = await fetch(`http://localhost:3000/api/chats/${chatId}`, {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/chats/${chatId}`, {
           credentials: 'include',
         });
         if (!res.ok) {

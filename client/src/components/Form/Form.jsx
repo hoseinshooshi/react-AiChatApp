@@ -70,7 +70,7 @@ const queryClient = useQueryClient();
 const mutation = useMutation({
   mutationFn:(text)=> {
     return (
-       fetch(`http://localhost:3000/api/chats/${data._id}`, {
+       fetch(`${import.meta.env.VITE_API_URL}/api/chats/${data._id}`, {
         method:"PUT", 
         credentials: "include",
         headers:{

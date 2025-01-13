@@ -1,0 +1,62 @@
+:root{
+    --gemini-clr1: #021832;
+    --gemini-clr2: #0047AB; 
+    --gemini-clr3: #0066cc78;
+}
+.chatpage{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.message{
+    padding: 20px;
+    align-self: flex-start;
+    padding: 20px;
+    border-radius: 20px;
+    outline-offset: 3px;
+    /* margin-top: 30px; */
+    outline: 2px solid var(--gemini-clr2);
+    background-color:#424848;
+    padding: 1.5rem; /* Using rems for better responsiveness */
+    margin-top: 2rem;
+    line-height: 50px; 
+    box-shadow: 0 2px 5px var(--gemini-clr3)/* Replacing the outline */
+}
+.message-user{
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 80%;
+    align-self: flex-end;
+    background-color:#3a3f3e;
+    outline: 2px solid #828e8a;
+    outline-offset: 3px;
+    margin-top: 30px;
+}
+.chat{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+   
+    p,li{
+        margin: 10px;
+        line-height: 23px;
+    }
+}
+.wrapper{
+    flex: 1;
+    overflow: scroll;
+    width: 100%;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+}
+.wrapperLoader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
